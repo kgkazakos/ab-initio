@@ -1,25 +1,30 @@
 # Ab Initio
 
 Build an LLM from scratch, from autograd primitives to a model you can talk to.
-Independent capability track. Hard mode: **Mon 24 Aug 2026 → Wed 31 Dec 2026**.
+Independent capability track. Hard mode: **Mon 24 Aug 2026 → Sun 7 Mar 2027**
+(re-baselined 1 Nov 2026).
 
 The canonical plan is `Ab_Initio_Roadmap.md`. Kickoff prompts for each milestone
 are in `PROMPTS.md` — start a fresh conversation per milestone and paste the
 matching prompt.
 
+A parallel **Own-AI track** (Ollama + an open model, local retrieval, tool use, a
+LoRA on my writing) runs alongside and converges with Ab Initio in M7. See the roadmap.
+
 ## Structure
     ab-initio/
       Ab_Initio_Roadmap.md   canonical roadmap (scope, ship dates, done-when)
       PROMPTS.md             one kickoff prompt per milestone (M0–M7)
+      CLAUDE.md              coach contract, loaded by every Claude Code session
       common/                shared utils, added only when a 2nd milestone needs them
-      m0-grad/               autograd engine + MLP        (ship Sun Aug 30)
-      m1-makemore/           char-level LM + manual backprop (ship Sun Sep 13)
-      m2-bpe/                BPE tokenizer                (ship Sun Sep 20)
-      m3-gpt/                transformer from primitives  (ship Sun Oct 11)
-      m4-pretrain/           pretrain + load GPT-2 weights (ship Sun Nov 8)
-      m5-finetune/           classifier + instruction tune (ship Sun Nov 22)
-      m6-chat/               nanochat capstone            (ship Sun Dec 13)
-      m7-stretch/            one deep dive                (ship Wed Dec 31)
+      m0-grad/               autograd engine + MLP        (ship Sun Nov 8)
+      m1-makemore/           char-level LM + manual backprop (ship Sun Nov 22)
+      m2-bpe/                BPE tokenizer                (ship Sun Nov 29)
+      m3-gpt/                transformer from primitives  (ship Sun Dec 20)
+      m4-pretrain/           pretrain + load GPT-2 weights (ship Sun Jan 17)
+      m5-finetune/           classifier + instruction tune (ship Sun Jan 31)
+      m6-chat/               nanochat capstone            (ship Sun Feb 21)
+      m7-stretch/            convergence: my own AI       (ship Sun Mar 7)
 
 ## Rules
 - Reimplement, don't copy. Type every line; reference repos are for unblocking only.
